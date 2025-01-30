@@ -6,7 +6,9 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main(){
+    printf("desafio trunfo \n");
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
