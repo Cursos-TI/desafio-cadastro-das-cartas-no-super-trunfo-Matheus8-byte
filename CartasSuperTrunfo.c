@@ -1,24 +1,44 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main(){
-    printf("desafio trunfo \n");
-
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+intmain()
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+#define NUM_ESTADOS 8
+#define CIDADES_POR_ESTADO 4
+
+typedef struct {
+    char codigo[5]; // Código da cidade (ex: A01)
+    char nome[50];
+    int populacao;
+    float area;
+    int pib;
+    int pontos_turisticos;
+} Cidade;
+
+void cadastrarCartas(Cidade cartas[]) {
+    // ... (código para cadastrar as cartas, como no exemplo anterior)
+}
+
+void exibirCartas(Cidade cartas[]) {
+    // ... (código para exibir as cartas, como no exemplo anterior)
+}
+
+void jogar(Cidade cartas[]) {
+    // Implementação da lógica do jogo
+    // ... (comparar atributos das cartas, determinar o vencedor, etc.)
+}
+
+int main() {
+    Cidade cartas[NUM_ESTADOS * CIDADES_POR_ESTADO]; // Array para armazenar todas as cartas
+
+    // Cadastrar as cartas manualmente ou a partir de um arquivo
+    cadastrarCartas(cartas, NUM_ESTADOS * CIDADES_POR_ESTADO);
+
+    // Exibir as cartas cadastradas
+    exibirCartas(cartas);
+
+    // Iniciar o jogo
+    jogar(cartas);
+
 
     return 0;
 }
