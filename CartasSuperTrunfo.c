@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 int main() {
   // Carta 1: Rio de Janeiro
   char estado1 = 'B'; // Estado 'B' para Rio de Janeiro
